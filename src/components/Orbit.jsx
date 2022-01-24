@@ -5,7 +5,9 @@ extend({ OrbitControls });
 const Orbit = () => {
   // const state = useThree();
   const { camera, gl } = useThree();
-  return <orbitControls args={[camera, gl.domElement]} />;
+  return (
+    <orbitControls attach="orbitControls" args={[camera, gl.domElement]} />
+  );
 };
 
 export default Orbit;
