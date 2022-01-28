@@ -1,10 +1,10 @@
 import * as THREE from "three";
-// import state from "../state";
+import state from "../state";
 
 const ColorPicker = (props) => {
   const handleClick = (e) => {
-    if (!window.activeMesh) return;
-    window.activeMesh.material.color = new THREE.Color(
+    if (!state.activeMesh) return;
+    state.activeMesh.material.color = new THREE.Color(
       e.target.style.background
     );
   };
@@ -13,12 +13,12 @@ const ColorPicker = (props) => {
       style={{
         position: "absolute",
         zIndex: 1,
-        // left: 0,
-        // right: 0,
-        // margin: "auto",
-        // width: "fit-content",
-        // display: "flex",
-        // top: "20px",
+        left: 0,
+        right: 0,
+        margin: "auto",
+        width: "fit-content",
+        display: "flex",
+        top: "20px",
       }}
     >
       <div

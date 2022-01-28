@@ -3,10 +3,14 @@ import { useBox } from "@react-three/cannon";
 const Floor = (props) => {
   const [ref, api] = useBox(() => ({ args: [20, 1, 10], ...props }));
   return (
-    <mesh ref={ref} {...props} receiveShadow>
-      <boxBufferGeometry args={[20, 1, 20]} />
-      <meshPhysicalMaterial /*color={"black"} opacity={1}*/
+    <mesh ref={ref} api={api} {...props} receiveShadow>
+      <boxBufferGeometry args={[200, 0.5, 200]} />
+      <meshPhysicalMaterial
+        transparent
+        color={"white"}
+        opacity={0.1}
       ></meshPhysicalMaterial>
+      {/* <shadowMaterial opacity={0.2} /> */}
     </mesh>
   );
 };
