@@ -11,7 +11,7 @@ const Bulb = (props) => {
         shadow-radius={10}
       />
       <sphereBufferGeometry args={[0.2, 20, 20]} />
-      <meshPhongMaterial emissive="yellow" />
+      <meshPhongMaterial emissive="white" />
     </mesh>
   );
 };

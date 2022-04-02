@@ -21,7 +21,7 @@ const Moto = (props) => {
     <Suspense fallback={null}>
       <Dragable transformGroup>
         <BoundingBox
-          visible
+          // visible
           position={[0, 3, 0]}
           dims={[3, 4.5, 10]}
           offset={[0, -2, 0]}

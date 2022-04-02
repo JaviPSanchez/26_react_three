@@ -6,9 +6,9 @@ const Floor = (props) => {
     <mesh ref={ref} api={api} {...props} receiveShadow>
       <boxBufferGeometry args={[200, 0.5, 200]} />
       <meshPhysicalMaterial
-        transparent
+        // transparent
         color={"white"}
-        opacity={0.1}
+        opacity={0.9}
       ></meshPhysicalMaterial>
       {/* <shadowMaterial opacity={0.2} /> */}
     </mesh>

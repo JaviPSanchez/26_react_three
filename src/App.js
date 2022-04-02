@@ -37,7 +37,7 @@ function App() {
         <Lights />
 
         <Suspense fallback={null}>
-          <Background position={[0, 0, 0]} />
+          {/* <Background position={[0, 0, 0]} /> */}
         </Suspense>
         <Physics>
           <Moto />
